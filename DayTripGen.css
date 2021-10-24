@@ -1,100 +1,65 @@
 
-html{
-    background-color: rgb(0, 0, 0);
-    height: 0px;
-}
-#container {
-    background-color: darkred;
-    background-image: url(images/IMG_0432.JPG);
-    height: 585px;
-    border: 25px rgb(0, 0, 0);
-    width: 900px;
-    margin: 25px auto;
-    text-align: center;
+.body
+{
+    background-color: white;
+    display: flex;
 }
 
-#btn {
-    margin: 50px auto;
-    height: 150px;
-    width: 300px;
-    font-size: 22px;
-    background-color: rgb(192, 191, 191);
-}
-#btn1 {
-    margin: 50px auto;
-    height: 150px;
-    width: 300px;
-    font-size: 22px;
-    background-color: rgb(192, 191, 191);
-}
- 
-#sidebar{
-    position:fixed;
-    width: 25%;
-    height: 40%;
-    
-    background-color: rgb(0, 0, 0);
-}
-#sidebar li{ 
-    color: rgb(54, 230, 0);
-    font-size: 30px;
-    padding: 30px;
-    border-bottom: darkgrey;
-    text-align: center;
+table,td,th,tr{
+    border:1px solid black;
+   
 }
 
-
-
-#sidebar.active{
-    left: 0;
+td,th
+{
+    padding-left:25px;
+    padding-right: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body{
-    width: 100%;
-   display: inline-flexbox;
-   justify-content: space-evenly;
-   align-items: flex-start;
+#selected-cities
+{
+    margin:15px;
 }
 
-.container {
-    width: 200px;
-    position: relative;
+#location-options
+{
+    padding-left:15px;
+    padding-right: 15px;
 }
-.click{
-    background-color: #f80707;
+
+#google-maps
+{
+    width: 45%;
+    height: 60%;
+    border: 2px solid black;
+    float: left;
 }
-.click:hover{
+
+#add-city-box
+{
+    padding:10px 10px 10px 10px;
+    margin: 20px;
+    float:left;
+}
+
+#lo-table
+{
+    margin:20px;
+}
+
+#lightbluetd
+{
+    background-color: aqua;
+}
+
+#lightgreentd
+{
+    background-color: greenyellow;
+}
+
+#lightredtd
+{
     background-color: red;
-}
-.click,.links{
-    padding: 12px;
-    font-size: 1.2em;
-    font-family: futura Md BT;
-    border:none ;
-    outline:none;
-    width: 200px;
-    color: #1b1309;
-    transition: 0.3s;
-}
-.list { 
-    position: absolute;
-    transform: scaleY(0);
-    transform-origin: top;
-    transition: 0.3s;
-}
-.newList{
-    transform: scaleY(1);
-}
-.links {
-    background-color: rgb(255, 0, 0);
-    
-}
-.links:hover {
-    background-color: rgb(255, 0, 0);
-    transform: scale(1.1);
 }
